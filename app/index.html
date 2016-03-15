@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>无限互动</title>
+    <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui.min.css" rel="stylesheet">
+    <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui-append.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet/less" rel="stylesheet/less" href="path/to/theme.less">-->
+    <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://g.alicdn.com/sj/qnui/1.5.1/js/sui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://g.alicdn.com/sj/qn/??jssdk.js,lib/js/less.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header class="sui-navbar">
+    <div class="navbar-inner"><a href="#" class="sui-brand"><img
+            src="http://admwuxianhudong.hz.taeapp.com/wuxianhudong/Public/Home/logo/qianniu_wxhd_mjx_logo.png">无限互动</a>
+        <ul class="sui-nav">
+            <li class="active sui-dropdown"><a href="javascript:void(0);">看图索骥</a>
+            </li>
+            <li><a href="#">上头条</a></li>
+            <li><a href="javascript:void(0);">数据分析</a></li>
+        </ul>
+    </div>
+</header>
+<div class="sui-container">
+    <form class="sui-form form-horizontal sui-validate" action="" method="post" id="servingForm">
+        <div class="control-group">
+            <label class="control-label">活动名称：</label>
+            <div class="controls">
+                <input class="input-xlarge" type='text' data-rules="required|minlength=1|maxlength=10"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">活动描述：</label>
+            <div class="controls">
+                <textarea class='input-xlarge' data-rules='required|minlength=1|maxlength=100'></textarea>
+            </div>
+        </div>
+        <div data-toggle="datepicker" class="control-group input-daterange" id="datepicker">
+            <label class="control-label">时间选择：</label>
+            <div class="controls">
+                <input type="text" class="input-medium input-date" data-rules='required'><span> -</span>
+                <input type="text" class="input-medium input-date" data-rules='required'>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">活动流量：</label>
+            <div class="controls">
+                <label class="radio-pretty inline checked">
+                    <input type="radio" checked="checked" name="flow"><span>流量包</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">活动流量：</label>
+            <div class="input-append">
+                <input id="appendedInput" type="number" class="span2 input-fat" data-rules='required'><span
+                    class="add-on">M</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">选择宝贝：</label>
+            <div class="controls">
+                <label data-toggle="radio" class="radio-pretty inline checked">
+                    <input type="radio" checked="checked" name="products"><span>热门</span>
+                </label>
+                <label data-toggle="radio" class="radio-pretty inline">
+                    <input type="radio" name="products"><span>宝贝</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">选择买家秀：</label>
+            <div class="controls">
+                <button data-toggle="modal"
+                        data-target="#myModal"
+                        data-keyboard="false"
+                        class="sui-btn btn-primary btn-small"
+                        id="chooseBuyerShow">选择买家秀
+                </button>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button class="sui-btn btn-primary btn-xlarge">创建活动</button>
+            </div>
+        </div>
+
+
+        <!-- Modal-->
+        <div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade"
+             style={width:800px;}>
+            <div class="modal-dialog sui-form form-horizontal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-dismiss="modal" aria-hidden="true" class="sui-close">×</button>
+                        <h4 id="myModalLabel" class="modal-title">选择买家秀</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="modal-body-table sui-table table-bordered-simple">
+                        </table>
+                        <div class="sui-pagination pagination-large">
+                            <ul>
+                                <li class="prev disabled"><a href="#">«</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li class="next"><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-ok="modal" class="sui-btn btn-primary btn-large">确定</button>
+                    <button type="button" data-dismiss="modal" class="sui-btn btn-default btn-large">取消
+                    </button>
+                </div>
+            </div>
+        </div>
+</div>
+</form>
+</div>
+</body>
+</html>

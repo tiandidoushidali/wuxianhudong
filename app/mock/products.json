@@ -1,0 +1,40 @@
+{
+  "state": 1,
+  "redirectUrl": "http://www.google.com",
+  "msg": "\u64cd\u4f5c\u6210\u529f",
+  "count": 3,
+  "data": [
+    {
+      "num_iid": 526421031165,
+      "title": "2016\u51ac\u88c5\u7537\u88c5\u97e9\u7248\u4fee\u8eab\u7acb\u9886\u7fbd\u7ed2\u68c9\u8863\u7537\u58eb\u52a0\u539a\u68c9\u670d\u5939\u514b\u5916\u5957\u7537",
+      "nick": "\u5929\u5730\u90fd\u662f\u5927\u7406",
+      "pic_url": "https:\/\/img.alicdn.com\/bao\/uploaded\/i4\/TB1pD1gLpXXXXcjXpXXXXXXXXXX_!!0-item_pic.jpg",
+      "price": "285.00",
+      "show_num": 2
+    },
+    {
+      "num_iid": 526420583438,
+      "title": "\u79cb\u51ac\u65b0\u6b3e\u52a0\u539a\u97e9\u7248\u7537\u58eb\u4fee\u8eab\u6b3e\u897f\u88e4\u65f6\u5c1a\u7eaf\u8272\u5c0f\u811a\u88e4\u4f11\u95f2\u88e4\u706f\u82af\u7ed2\u7537\u88e4",
+      "nick": "\u5929\u5730\u90fd\u662f\u5927\u7406",
+      "pic_url": "https:\/\/img.alicdn.com\/bao\/uploaded\/i3\/TB1eHdtKVXXXXXvXXXXXXXXXXXX_!!0-item_pic.jpg",
+      "price": "198.00",
+      "show_num": 2
+    },
+    {
+      "num_iid": 526456710082,
+      "title": "\u4fee\u8eab\u5f39\u529b\u94c5\u7b14\u725b\u4ed4\u957f\u88e4\u663e\u7626\u4f11\u95f2\u9752\u5e74\u7537\u88e4 \u7eaf\u84dd\u8272\u6709\u52a0\u7ed2\u52a0\u539a\u6b3e",
+      "nick": "\u5929\u5730\u90fd\u662f\u5927\u7406",
+      "pic_url": "https:\/\/img.alicdn.com\/bao\/uploaded\/i2\/TB1kh2RKVXXXXc4XpXXXXXXXXXX_!!0-item_pic.jpg",
+      "price": "56.00",
+      "show_num": 2
+    },
+    {
+      "num_iid": 526477908876,
+      "title": "\u51ac\u6b3e\u8fd0\u52a8\u88e4\u7537\u957f\u88e4\u6625\u79cb\u6536\u53e3\u5c0f\u811a\u88e4\u68c9\u7537\u58eb\u52a0\u7ed2\u52a0\u539a\u4f11\u95f2\u88e4\u4fee\u8eab\u536b\u88e4",
+      "nick": "\u5929\u5730\u90fd\u662f\u5927\u7406",
+      "pic_url": "https:\/\/img.alicdn.com\/bao\/uploaded\/i3\/TB1QbQJJVXXXXcWXpXXXXXXXXXX_!!0-item_pic.jpg",
+      "price": "145.00",
+      "show_num": 2
+    }
+  ]
+}

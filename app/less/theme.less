@@ -1,0 +1,40 @@
+@color-base: #56b6f2;
+@palette-color-1: #ffffff;
+@palette-color-2: #ecf7fe;
+@palette-color-3: #d9effc;
+@palette-color-4: #c6e6fb;
+@palette-color-5: #b3def9;
+@palette-color-6: #a0d6f8;
+@palette-color-7: #8dcef6;
+@palette-color-8: #7ac6f5;
+@palette-color-9: #56b6f2; /* @palette-color-9 的值和 @color-base 相同，往上颜色越来越浅，往下颜色越来越深。*/
+@palette-color-10: #55b5f2;
+@palette-color-11: #42adf0;
+@palette-color-12: #2fa5ef;
+@palette-color-13: #1c9dee;
+@palette-color-14: #1193e3;
+@palette-color-15: #1086d0;
+@palette-color-16: #0f7abd;
+@palette-color-17: #0d6eaa;
+@palette-color-18: #0c6298;
+@palette-color-19: #0a5685;
+@palette-color-20: #094972;
+@palette-color-21: #073d5f;
+@palette-color-22: #06314c;
+@palette-color-23: #042539;
+@palette-color-24: #031826;
+@palette-color-25: #010c13;
+/* 从3.0开始，不推荐使用变量@theme-background-image */
+@theme-background-image: url(http://gtms04.alicdn.com/tps/i4/TB1X6noHXXXXXc5XFXXb4A9VXXX-1200-900.jpg);
+@theme-bg-img: url(http://gtms04.alicdn.com/tps/i4/TB1X6noHXXXXXc5XFXXb4A9VXXX-1200-900.jpg);
+@theme-bg-url: "http://gtms04.alicdn.com/tps/i4/TB1X6noHXXXXXc5XFXXb4A9VXXX-1200-900.jpg";
+@theme-bg-x: right; /* 背景图片X轴对齐方式 */
+@title-bar-height: 30px;
+
+
+// 在文件头部先书写需要使用的变量，否则less编译时会报变量undefined的错误
+@color-base: #ffffff;
+//@theme-background-image: url(about:blank;);
+body {
+  background: @theme-bg-img @color-base @theme-bg-x -@title-bar-height no-repeat;
+}
