@@ -29,7 +29,7 @@ gulp.task('scripts', function() {
 
 // copy html from app to dist
 gulp.task('html', function() {
-  return gulp.src(app + 'index.html')
+  return gulp.src(app + '*.html')
     .pipe(gulp.dest(dist))
     .pipe($.size({title: 'html'}))
     .pipe($.connect.reload());
@@ -55,7 +55,7 @@ gulp.task('mock', function() {
 // watch styl, html and js file changes
 gulp.task('watch', function() {
   gulp.watch(app + 'less/**/*.less', ['styles']);
-  gulp.watch(app + 'index.html', ['html']);
+  gulp.watch(app + '*.html', ['html']);
   gulp.watch(app + 'js/**/*.js', ['scripts']);
   gulp.watch(app + 'js/**/*.jsx', ['scripts']);
 });
