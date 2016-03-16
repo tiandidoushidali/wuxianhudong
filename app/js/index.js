@@ -1,17 +1,10 @@
 var buyerShowsApi = 'http://admwuxianhudong.hz.taeapp.com/wuxianhudong/index.php?m=home&c=goods&a=index&mod=aglvs';
 
 $(window).on('load', function() {
-  function unique(array) {
-    var nary = array.sort();
-    for (var i = 0; i < nary.length - 1; i++) {
-      if (nary[i] == nary[i + 1]) {
-      }
-    }
-  }
-
   function getSelectedBuyerShows() {
     const $productCheckBox = $('.checkbox--choose-buyer-shows');
     const selectedBuyerShows = [];
+
     $productCheckBox.map(function(index, checkbox) {
       if (checkbox.checked) {
         selectedBuyerShows.push({
@@ -22,6 +15,7 @@ $(window).on('load', function() {
         });
       }
     });
+
     return selectedBuyerShows;
   }
 
@@ -37,13 +31,19 @@ $(window).on('load', function() {
   //  $checkbox.checkbox($currentTarget.data('toggle'))
   //});
 
-  $myModal.on('okHidden', function(e) {
+  $myModal.on('okHide', function(e) {
     var $selectedBuyerShowsContainer = $('.selected-buyer-shows-container');
     var $selectedBuyerShows = getSelectedBuyerShows();
+    if ($selectedBuyerShows.length > 6) {
+      alert('您最多只能选择6个买家秀哦')
+      return;
+    }
+
+    $selectedBuyerShowsContainer.html('');
     $selectedBuyerShows.map(function(item, index) {
       $selectedBuyerShowsContainer.append(
-        '<img src="' + item.picture + '"/>'
-      )
+        '<td><img src="' + item.picture + '" width="200" height="200"/></td>'
+      );
     });
   });
 

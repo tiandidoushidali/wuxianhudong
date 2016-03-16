@@ -83,8 +83,10 @@
                 </button>
             </div>
         </div>
-        <div class="control-group selected-buyer-shows-container">
-        </div>
+        <table>
+            <tr class="control-group selected-buyer-shows-container">
+            </tr>
+        </table>
         <div class="control-group">
             <div class="controls">
                 <button class="sui-btn btn-primary btn-xlarge">创建活动</button>
@@ -93,8 +95,7 @@
 
 
         <!-- Modal-->
-        <div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade"
-             style={width:800px;}>
+        <div id="myModal" tabindex="-1" role="dialog" data-hasfoot="false" class="sui-modal hide fade">
             <div class="modal-dialog sui-form form-horizontal">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -102,6 +103,7 @@
                         <h4 id="myModalLabel" class="modal-title">选择买家秀</h4>
                     </div>
                     <div class="modal-body">
+                        <div>您还可以选择<span class="available-number"></span>个买家秀</div>
                         <table class="modal-body-table sui-table table-bordered">
                         </table>
                         <div class="sui-pagination pagination-large">
