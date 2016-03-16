@@ -7,7 +7,7 @@
     <title>无限互动</title>
     <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui.min.css" rel="stylesheet">
     <link href="http://g.alicdn.com/sj/qnui/1.5.1/css/sui-append.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet/less" rel="stylesheet/less" href="path/to/theme.less">-->
+    <link href="css/index.css" rel="stylesheet">
     <script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="http://g.alicdn.com/sj/qnui/1.5.1/js/sui.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="http://g.alicdn.com/sj/qn/??jssdk.js,lib/js/less.js"></script>
@@ -16,7 +16,7 @@
 <body>
 <header class="sui-navbar">
     <div class="navbar-inner"><a href="#" class="sui-brand"><img
-            src="http://admwuxianhudong.hz.taeapp.com/wuxianhudong/Public/Home/logo/qianniu_wxhd_mjx_logo.png">无限互动</a>
+            src="">无限互动</a>
         <ul class="sui-nav">
             <li class="active sui-dropdown"><a href="javascript:void(0);">看图索骥</a>
             </li>
@@ -26,7 +26,8 @@
     </div>
 </header>
 <div class="sui-container">
-    <form class="sui-form form-horizontal sui-validate" action="" method="post" id="servingForm">
+    <form class="sui-form form-horizontal sui-validate" action="" method="post" id="servingForm"
+          novalidate="novalidate">
         <div class="control-group">
             <label class="control-label">活动名称：</label>
             <div class="controls">
@@ -83,6 +84,8 @@
                 </button>
             </div>
         </div>
+        <div class="control-group selected-buyer-shows-container">
+        </div>
         <div class="control-group">
             <div class="controls">
                 <button class="sui-btn btn-primary btn-xlarge">创建活动</button>
@@ -100,7 +103,7 @@
                         <h4 id="myModalLabel" class="modal-title">选择买家秀</h4>
                     </div>
                     <div class="modal-body">
-                        <table class="modal-body-table sui-table table-bordered-simple">
+                        <table class="modal-body-table sui-table table-bordered">
                         </table>
                         <div class="sui-pagination pagination-large">
                             <ul>
